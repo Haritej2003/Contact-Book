@@ -72,7 +72,7 @@ A full-stack **MERN-based Contact Book** that allows users to manage their perso
 ## 🎯 **Installation & Setup**
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/your-username/contact-book.git
+git clone https://github.com/Haritej2003/contact-book.git
 cd contact-book
 ```
 
