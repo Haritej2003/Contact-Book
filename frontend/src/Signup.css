@@ -1,0 +1,86 @@
+.signup-body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width:100%;
+    background-color: blueviolet;
+    padding-top: 5%;
+}
+.signup-container{
+    width:30%;
+    height:35rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border:none;
+    border-radius: 10px;
+  
+    margin:auto;
+   
+    
+}
+.signup-container form{
+    height:100%;
+    width:100%;
+    margin:10px;
+    /* background-color: blue; */
+    padding:20px;
+    box-sizing: border-box;
+}
+.signup-container h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-bottom:0;
+  
+}
+.paragraph{
+    margin-top:5px;
+    color:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    
+}
+
+.signup-container form label{
+    /* font-weight:600; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 20px;
+
+}
+.signup-container form input{
+    margin:4px 0px 20px 20px;
+    width: 85%;
+    height:2rem;
+    padding-left:7px;
+    padding-right:10px;
+    border-color:rgb(189, 188, 188);
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.signup-container form button{
+    cursor: pointer;
+    width: 90%;
+    height:2rem;
+    margin:4px 0px 20px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(162,80,192,1) 0%, rgba(157,0,255,1) 52%);
+
+}
+.signup-container form button:hover{
+    background: linear-gradient(90deg, rgba(157,0,255,1) 0%,
+     rgba(162,80,192,1) 0%, 
+     rgb(36, 26, 236) 52%);
+     
+}
+.signup-container form p{
+    margin:4px 0px 20px 20%;
+    font-size: 13px;
+    
+}

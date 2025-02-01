@@ -1,0 +1,77 @@
+.login-body{
+    padding:0;
+    margin: 0;
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    /* background-color:rgb(238, 236, 236); */
+}
+.LoginContainer{
+    /* border:2px solid black; */
+    width:30rem;
+    height:25rem;
+    padding:0;
+    background-color:white;
+    border-radius: 10px;
+    
+}
+
+.LoginContainer h1{
+    display:flex;
+    justify-content: center;
+    
+    margin:18px 0px 0px 0px;
+    padding: 15px 0px;
+}
+.LoginContainer form{
+    height:70%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap:20px;    
+   
+}
+.LoginContainer .form input{
+    height:2.8rem;
+    width:15rem;
+    border:none;
+    padding-left:10px;
+    border-radius: 3px;
+    line-height:20px;
+    /* border: none; */
+    outline: none;
+    background-color:rgb(216, 216, 216);
+    font-size:14px;
+    color:rgb(91, 91, 91);
+    transition:200ms ease-in-out;
+}
+.LoginContainer form input:hover{
+    background-color:rgb(200, 200, 200);
+}
+.LoginContainer form button{
+    margin:0;
+    height:2.8rem;
+    width:16rem;
+    font-size:17px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color:white;
+    font-weight: bolder;
+    background-color: rgb(99, 99, 251);
+
+}
+.LoginContainer form button:hover{
+    background-color: rgb(37, 37, 247);
+    transition:300ms ease-in-out;
+}
+.error-message{
+    margin: 0;
+}

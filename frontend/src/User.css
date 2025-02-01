@@ -1,0 +1,234 @@
+/* General Layout */
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: auto;
+  }
+  
+  /* User Info */
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .input-group label {
+    font-weight: bold;
+    width: 120px;
+    text-align: right;
+  }
+  
+  .input-group input {
+    width: 60%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Buttons */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .edit-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .add-btn {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Contacts Table */
+  .contacts-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  .contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
+  }
+  
+  .contacts-table th, .contacts-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .contacts-table th {
+    background: #2c3e50;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    white-space: nowrap;
+  }
+  
+  .contacts-table tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+  .contacts-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    max-width: 200px; /* Maximum width before scroll appears */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .contacts-table tr td:hover {
+    max-width: 400px; /* Expands up to this width */
+    overflow: auto; /* Enables scrolling after max width */
+    white-space: normal; /* Allows text to wrap */
+    word-wrap: break-word;
+  }
+  .no-contact {
+    background: white;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+  }
+
+  /* modal content */
+  /* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Background blur effect */
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeIn 0.3s forwards;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #ffffff;
+  padding: 40px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #444;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+}
+
+/* Input Fields */
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.modal-content button:hover {
+  background: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+  
